@@ -21,9 +21,8 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
         factorial = int(input('Please enter the number you would like to get the factorial of (between 0-10): '))
 
         # Requests a new number from the user within range if the number from before was out of range
-        if factorial < 0 or factorial > 10:
-            while factorial <0 or factorial > 10:
-                factorial = int(input('That number is not valid, please choose a number between 0-10: '))
+        while factorial <0 or factorial > 10:
+            factorial = int(input('That number is not valid, please choose a number between 0-10: '))
 
         # Calculates the factorial and returns the result
         result = repetition.get_factorial(factorial)
@@ -44,9 +43,8 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
         total_sum = int(input('Please enter the number you would like to get the total sum of all odd factors (between 0-100): '))
 
         # Requests a new number from the user within range if the number from before was out of range
-        if total_sum < 0 or total_sum > 100:
-            while total_sum < 0 or total_sum > 100:
-                total_sum = int(input('That number is not valid, please choose a number between 0-100: '))
+        while total_sum < 0 or total_sum > 100:
+            total_sum = int(input('That number is not valid, please choose a number between 0-100: '))
 
         # Calculates the total sum of odd factors and returns the result
         result = repetition.sum_odd_numbers(total_sum)
