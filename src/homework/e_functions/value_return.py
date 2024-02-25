@@ -1,5 +1,5 @@
 def get_seconds(epoch_seconds):
-    remaining_seconds = epoch_seconds // (24 * 3600)
+    remaining_seconds = epoch_seconds % 3600
     total_seconds_left = int(remaining_seconds % 60)
 
     return total_seconds_left
