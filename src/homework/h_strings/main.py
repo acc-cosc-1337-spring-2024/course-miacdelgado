@@ -35,6 +35,10 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
                   '3-Exit\n')
                 
             menu_select = int(input('Select one of the above options: '))
+
+            while menu_select != 1 and menu_select != 2 and menu_select != 3:
+                menu_select = int(input('That choice is not valid, please choose a menu option: '))
+
             if menu_select == 3:
                 print("Goodbye")
                 menu_select = 'exit'
@@ -59,6 +63,10 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
                   '3-Exit\n')
                 
             menu_select = int(input('Select one of the above options: '))
+
+            while menu_select != 1 and menu_select != 2 and menu_select != 3:
+                menu_select = int(input('That choice is not valid, please choose a menu option: '))
+
             if menu_select == 3:
                 print("Goodbye")
                 menu_select = 'exit'
@@ -75,5 +83,9 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
                   '3-Exit\n')
             
             menu_select = int(input('Select one of the above options: '))
+
+            while menu_select != 1 and menu_select != 2 and menu_select != 3:
+                menu_select = int(input('That choice is not valid, please choose a menu option: '))
+
             if menu_select == 3:
                 print("Goodbye")
